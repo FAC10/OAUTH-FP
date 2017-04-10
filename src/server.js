@@ -14,7 +14,12 @@ server.connection({ port: process.env.PORT || 4000,
     host: 'localhost'
 });
 
-
+server.state('oAuthWorkshop', {
+  ttl: 1000 * 60,
+  path: '/',
+  isSecure: true,
+  encoding: 'base64json'
+})
 
 server.register(inert, (err) => {
   if (err) throw err;
