@@ -1,0 +1,24 @@
+{
+  "name": "oauth-fp",
+  "version": "1.0.0",
+  "description": "Week 8 OAuth workshop",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FAC10/OAUTH-FP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FAC10/OAUTH-FP/issues"
+  },
+  "homepage": "https://github.com/FAC10/OAUTH-FP#readme",
+  "dependencies": {
+    "hapi": "^16.1.1",
+    "inert": "^4.2.0"
+  }
+}
