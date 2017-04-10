@@ -4,8 +4,8 @@
   "description": "Week 8 OAuth workshop",
   "main": "index.js",
   "scripts": {
-    "start": "node src/server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/start",
+    "test": "node tests/test | tap-spec"
   },
   "repository": {
     "type": "git",
