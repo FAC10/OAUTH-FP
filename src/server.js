@@ -6,11 +6,12 @@ const fs = require('fs');
 
 const routes = require('./routes');
 
-server.connection({ port: process.env.PORT || 3000,
+server.connection({ port: process.env.PORT || 4000,
   tls: {
         key: fs.readFileSync(path.join(__dirname, '../keys/key.pem'), 'utf8'),
         cert: fs.readFileSync(path.join(__dirname, '../keys/cert.pem'), 'utf8')
-    }
+    },
+    host: 'localhost'
 });
 
 
