@@ -41,7 +41,7 @@ module.exports = {
                         let config = {
                             path: '/', // the token is valid for every path starting with /
                         }
-                        reply.redirect('/secure').state('token', token, config);
+                        reply('You are logged in. This would ideally be a handlebars view instead').state('token', token, config);
                     });
                 })
             }
