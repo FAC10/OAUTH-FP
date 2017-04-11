@@ -1,9 +1,7 @@
 module.exports = {
   method: 'GET',
   path: '/',
-  config: {
-    auth: false,
-  },
+  config: {auth: false},
   handler: (req, reply) => {
     reply.file('./public/index.html');
   },
