@@ -1,7 +1,7 @@
 module.exports = {
   method: 'GET',
-  path: '/',
+  path: '/secure',
   handler: (req, reply) => {
-    reply.file('./public/index.html');
+    reply('yo you are secure or something');
   },
 };

@@ -24,6 +24,7 @@
     "hapi-auth-cookie": "^7.0.0",
     "hapi-context-credentials": "^2.0.0",
     "inert": "^4.2.0",
+    "jsonwebtoken": "^7.3.0",
     "request": "^2.81.0"
   },
   "devDependencies": {

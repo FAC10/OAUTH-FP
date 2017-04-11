@@ -26,7 +26,7 @@ server.connection({ port: process.env.PORT || 4000,
 server.register([inert, cookie], (err) => {
   if (err) throw err;
   server.route(routes);
-  server.auth.strategy('session', 'cookie', 'required', {
+  server.auth.strategy('session', 'cookie', 'optional', {
     password: process.env.COOKIE_PASSWORD,
     cookie: 'oauthCookie',
     isSecure: true,
