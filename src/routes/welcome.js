@@ -6,6 +6,7 @@ const jwt = require('jsonwebtoken');
 module.exports = {
     method: 'GET',
     path: '/welcome',
+    config: {auth: false},
     handler: (req, reply) => {
         const query = req.url.query;
         const clientId = process.env.CLIENT_ID;
@@ -40,10 +41,7 @@ module.exports = {
                         let config = {
                             path: '/', // the token is valid for every path starting with /
                         }
-                        req.cookieAuth.set({
-                            jwt: token
-                        });
-                        reply.redirect('/secure');
+                        reply.redirect('/secure').state('token', token, config);
                     });
                 })
             }
